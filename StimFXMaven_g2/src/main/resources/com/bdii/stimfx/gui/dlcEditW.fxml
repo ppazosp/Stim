@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="450.0" styleClass="primary-color" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="50.0" layoutY="50.0" prefHeight="150.0" prefWidth="350.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="400.0" spacing="30.0">
+               <children>
+                  <Label fx:id="comentLabel" prefHeight="28.0" prefWidth="120.0" text="Nombre" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" prefHeight="28.0" prefWidth="274.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="415.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="301.0" text="Precio" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="priceField" alignment="CENTER" focusTraversable="false" prefHeight="28.0" prefWidth="120.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label contentDisplay="CENTER" prefHeight="30.0" prefWidth="20.0" text=" €" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="47.0" prefWidth="400.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="400.0">
+                     <children>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="41.0" prefWidth="109.0">
+                           <children>
+                              <HBox fx:id="actionHbox" alignment="CENTER" onMouseClicked="#publishEdit" prefHeight="30.0" prefWidth="117.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: FFFFFF; -fx-border-width: 2;" stylesheets="@../css/styles.css">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../images/addW.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="publishLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="64.0" text="Publicar" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="selected" />
+                                    <String fx:value="primary-color" />
+                                 </styleClass>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

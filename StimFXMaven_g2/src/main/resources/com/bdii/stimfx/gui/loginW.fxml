@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="500.0" style="-fx-background-color: #1B2631;">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="170.0" prefHeight="80.0" prefWidth="441.0" text="Bienvenido a stim" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="174.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../../images/steam.png" />
+      </ImageView>
+   </AnchorPane>
+    <AnchorPane layoutX="500.0" minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+      <Label layoutX="48.0" layoutY="46.0" prefHeight="150.0" prefWidth="400.0" text="Iniciar sesión">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="48.0" layoutY="196.0" prefHeight="55.0" prefWidth="400.0" promptText="Usuario">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="48.0" layoutY="293.0" prefHeight="55.0" prefWidth="400.0" promptText="Contraseña">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+        <Label fx:id="credentialsErrorLabel" layoutX="48.0" layoutY="147.0" prefHeight="31.0" prefWidth="400.0" text="¡Credenciales incorrectos!" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+             <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+        <HBox alignment="CENTER" layoutX="298.0" layoutY="379.0" onMouseClicked="#loginCheck" prefHeight="55.0" prefWidth="150.0" style="-fx-background-radius: 5; -fx-border-width: 1; -fx-border-radius: 5; -fx-border-color: #1B2631;" stylesheets="@../css/styles.css">
+           <children>
+               <Label alignment="CENTER" text="Iniciar Sesion" textFill="WHITE">
+                   <font>
+                       <Font size="15.0" />
+                   </font>
+               </Label>
+           </children>
+           <styleClass>
+               <String fx:value="primary-color" />
+               <String fx:value="selected" />
+           </styleClass>
+       </HBox>
+        <HBox alignment="CENTER" layoutX="50.0" layoutY="473.0" onMouseClicked="#showSiginScene" prefHeight="55.0" prefWidth="400.0" style="-fx-background-radius: 5; -fx-border-width: 1; -fx-border-radius: 5; -fx-border-color: #1B2631;" stylesheets="@../css/styles.css">
+           <children>
+               <Label alignment="CENTER" text="¿No tienes una cuenta? Registrate">
+                   <font>
+                       <Font size="15.0" />
+                   </font>
+               </Label>
+           </children>
+           <styleClass>
+               <String fx:value="secondary-color" />
+               <String fx:value="selected2" />
+           </styleClass>
+       </HBox>
+      <HBox alignment="CENTER" layoutX="48.0" layoutY="397.0" onMouseClicked="#showSiginScene" prefHeight="19.0" prefWidth="230.0" style="-fx-background-radius: 5;" styleClass="selected" stylesheets="@../css/styles.css">
+         <children>
+              <Label alignment="CENTER" prefHeight="9.0" prefWidth="230.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css" text="¿Has olvidado tu contraseña?" textFill="#1b2631">
+               <font>
+                  <Font size="15.0" />
+               </font>
+             </Label>
+         </children>
+      </HBox>
+   </AnchorPane>
+</AnchorPane>

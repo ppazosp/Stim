@@ -1,0 +1,33 @@
+.primary-color{
+    -fx-background-color: #1B2631;
+}
+
+.secondary-color{
+    -fx-background-color: #AEB6BF;
+}
+
+.white-color{
+    -fx-background-color: #FFFFFF;
+}
+
+.button{
+ -fx-background-color:  #AEB6BF;
+ -fx-background-radius: 30;
+}
+
+.selected-border{
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0 5 0 0;
+}
+
+.selected:hover{
+    -fx-background-color: #AEB6BF;
+}
+
+.selected2:hover {
+    -fx-background-color: #CFD7E0;
+}
+
+.progress-bar {
+    -fx-progress-color: #1B2631;
+}

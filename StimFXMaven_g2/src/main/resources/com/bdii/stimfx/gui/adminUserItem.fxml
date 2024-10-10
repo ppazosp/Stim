@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="318.0" spacing="10.0" style="-fx-background-color: #1B2631; -fx-background-radius: 10;" styleClass="button" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bdii.stimfx.gui.AdminUserItemController">
+   <children>
+      <ImageView fx:id="iconImage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="nameLabel" prefHeight="30.0" prefWidth="203.0" text="XXXXXXXXX" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="40.0" prefWidth="135.0">
+         <children>
+            <HBox fx:id="adminHbox" alignment="CENTER" onMouseClicked="#adminManagement" prefHeight="30.0" prefWidth="90.0" spacing="5.0" style="-fx-background-radius: 30; -fx-border-color: FFFFFF; -fx-border-radius: 20; -fx-border-width: 2;" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/makeAdmin.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="adminLabel" text="Dar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="selected" />
+                  <String fx:value="primary-color" />
+               </styleClass>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

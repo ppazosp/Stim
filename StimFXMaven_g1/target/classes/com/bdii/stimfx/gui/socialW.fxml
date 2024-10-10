@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="200.0" style="-fx-background-color: #1B2631;">
+        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="22.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../../images/steam.png" />
+        </ImageView>
+        <VBox layoutY="110.0" prefHeight="533.0" prefWidth="200.0" spacing="10.0">
+            <children>
+                <HBox alignment="CENTER" onMouseClicked="#showMainScene" prefHeight="33.0" prefWidth="190.0" spacing="10.0" styleClass="selected" stylesheets="@../css/styles.css">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../images/shop.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="32.0" prefWidth="117.0" text="Tienda" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#showLibraryScene" prefHeight="33.0" prefWidth="190.0" spacing="10.0" styleClass="selected" stylesheets="@../css/styles.css">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../images/library.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="32.0" prefWidth="117.0" text="Biblioteca" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="33.0" prefWidth="190.0" spacing="10.0" stylesheets="@../css/styles.css">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../images/community.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="32.0" prefWidth="117.0" text="Social" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                    </children>
+               <styleClass>
+                  <String fx:value="selected" />
+                  <String fx:value="selected-border" />
+               </styleClass>
+                </HBox>
+            </children>
+        </VBox>
+        <Label layoutX="82.0" layoutY="51.0" text="STIM" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+      <VBox alignment="BOTTOM_CENTER" layoutY="536.0" prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+         <children>
+                <HBox alignment="CENTER" onMouseClicked="#showProfileScene" prefHeight="33.0" prefWidth="190.0" spacing="10.0" styleClass="selected" stylesheets="@../css/styles.css">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../images/profile.png" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="32.0" prefWidth="117.0" text="Perfil" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                    </children>
+                </HBox>
+         </children>
+      </VBox>
+    </AnchorPane>
+    <AnchorPane layoutX="200.0" minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: #FFFFFF;">
+      <children>
+         <HBox alignment="CENTER" layoutX="48.0" layoutY="46.0" prefHeight="45.0" prefWidth="955.0" spacing="10.0">
+            <children>
+               <TextField fx:id="searchBar" focusTraversable="false" prefHeight="30.0" prefWidth="916.0" promptText="Escriba el nombre de un usuario">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </TextField>
+               <Button focusTraversable="false" mnemonicParsing="false" onAction="#showSearchResults" prefHeight="24.0" prefWidth="28.0">
+                  <graphic>
+                     <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../../images/search.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+            </children>
+         </HBox>
+         <Separator layoutX="522.0" layoutY="113.0" orientation="VERTICAL" prefHeight="589.0" prefWidth="0.0" style="-fx-background-color: #1B2631;" />
+         <ScrollPane layoutX="50.0" layoutY="162.0" prefHeight="540.0" prefWidth="440.0" style="-fx-background-color: transparent;" vbarPolicy="ALWAYS">
+            <content>
+               <VBox fx:id="followersVbox" prefHeight="538.0" prefWidth="423.0" spacing="5.0" style="-fx-background-color: AEB6BF; -fx-background-radius: 15;">
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding></VBox>
+            </content>
+         </ScrollPane>
+         <Label layoutX="50.0" layoutY="117.0" prefHeight="45.0" prefWidth="140.0" text="Seguidos">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+         <ScrollPane layoutX="562.0" layoutY="162.0" prefHeight="540.0" prefWidth="440.0" style="-fx-background-color: transparent;" vbarPolicy="ALWAYS">
+            <content>
+               <VBox fx:id="resultsVbox" prefHeight="538.0" prefWidth="423.0" spacing="5.0" style="-fx-background-color: AEB6BF; -fx-background-radius: 15;">
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding></VBox>
+            </content>
+         </ScrollPane>
+         <Label fx:id="resultsLabel" layoutX="562.0" layoutY="117.0" prefHeight="45.0" prefWidth="440.0" text="Resultados para &quot;&quot;">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+
+      </children></AnchorPane>
+</AnchorPane>

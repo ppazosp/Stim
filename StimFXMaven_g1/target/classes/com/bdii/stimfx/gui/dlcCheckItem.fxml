@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="checkHbox" alignment="CENTER" prefHeight="20.0" prefWidth="175.0" style="-fx-background-color: #1B2631;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bdii.stimfx.gui.DLCCheckItemController">
+   <children>
+      <CheckBox fx:id="checkBox" mnemonicParsing="false" onAction="#OnAction" prefHeight="19.0" prefWidth="172.0" text="XXX" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="priceLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="95.0" text="XX.XX€" textFill="WHITE" />
+   </children>
+</HBox>

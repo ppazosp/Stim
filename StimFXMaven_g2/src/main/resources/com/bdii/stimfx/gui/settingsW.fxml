@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="200.0" style="-fx-background-color: #1B2631;">
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="22.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../../images/steam.png" />
+      </ImageView>
+      <VBox layoutY="110.0" prefHeight="361.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <HBox fx:id="comMenu" alignment="CENTER" onMouseClicked="#showCommunityScene" prefHeight="33.0" prefWidth="190.0" spacing="10.0" styleClass="selected" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/earth.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="32.0" prefWidth="117.0" text="Comunidad" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="editMenu" alignment="CENTER" onMouseClicked="#showEditScene" prefHeight="33.0" prefWidth="190.0" spacing="10.0" styleClass="selected" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/edit.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="32.0" prefWidth="117.0" text="Edicion" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="adminMenu" alignment="CENTER" onMouseClicked="#showAdminScene" prefHeight="33.0" prefWidth="190.0" spacing="10.0" styleClass="selected" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/admin.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="32.0" prefWidth="117.0" text="Administrar" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="82.0" layoutY="51.0" text="STIM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <VBox alignment="BOTTOM_CENTER" layoutY="620.0" prefHeight="116.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="190.0" spacing="10.0" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/settings.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="32.0" prefWidth="117.0" text="Ajustes" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="selected" />
+                  <String fx:value="selected-border" />
+               </styleClass>
+            </HBox>
+         </children>
+      </VBox>
+   </AnchorPane>
+   <AnchorPane layoutX="200.0" minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="1050.0" style="-fx-background-color: #FFFFFF;">
+      <children>
+         <HBox layoutX="270.0" layoutY="285.0" prefHeight="180.0" prefWidth="510.0" spacing="50.0">
+            <children>
+               <VBox fx:id="beEditorVbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#beEditor" prefHeight="180.0" prefWidth="230.0" spacing="10.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #1B2631; -fx-border-width: 5;" stylesheets="@../css/styles.css">
+                  <children>
+                     <HBox alignment="CENTER" prefHeight="38.0" prefWidth="247.0">
+                        <children>
+                           <VBox alignment="CENTER" prefHeight="58.0" prefWidth="255.0" spacing="3.0">
+                              <children>
+                                 <Label fx:id="editorPreLabel" alignment="CENTER" prefHeight="21.0" prefWidth="199.0" text="Convertirme en " textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="editorPreLabel11" alignment="CENTER" prefHeight="21.0" prefWidth="208.0" text="EDITOR" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="24.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                     <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../../images/editor.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+                  <styleClass>
+                     <String fx:value="primary-color" />
+                     <String fx:value="selected" />
+                  </styleClass>
+               </VBox>
+               <VBox fx:id="bePlayerVbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#bePlayer" prefHeight="180.0" prefWidth="230.0" spacing="10.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #1B2631; -fx-border-width: 5;" stylesheets="@../css/styles.css">
+                  <children>
+                     <HBox alignment="CENTER" prefHeight="38.0" prefWidth="247.0">
+                        <children>
+                           <VBox alignment="CENTER" prefHeight="58.0" prefWidth="255.0" spacing="3.0">
+                              <children>
+                                 <Label fx:id="playerPreLabel" alignment="CENTER" prefHeight="21.0" prefWidth="199.0" text="Convertirme en " textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label fx:id="editorPreLabel111" alignment="CENTER" prefHeight="21.0" prefWidth="208.0" text="JUGADOR" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="24.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                     <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../../images/trophy.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+                  <styleClass>
+                     <String fx:value="primary-color" />
+                     <String fx:value="selected" />
+                  </styleClass>
+               </VBox>
+            </children>
+         </HBox>
+         <HBox fx:id="backHbox" alignment="CENTER" layoutX="981.0" layoutY="681.0" onMouseClicked="#showLoginWindow" prefHeight="55.0" prefWidth="55.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css">
+            <children>
+               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../images/logout.png" />
+                  </image>
+               </ImageView>
+            </children>
+            <styleClass>
+               <String fx:value="selected" />
+               <String fx:value="primary-color" />
+            </styleClass>
+         </HBox>
+      </children></AnchorPane>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="comHbox" alignment="CENTER" prefHeight="56.0" prefWidth="443.0" spacing="25.0" style="-fx-background-radius: 15;" styleClass="primary-color" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bdii.stimfx.gui.CommunitySearchItemController">
+   <children>
+      <ImageView fx:id="iconImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox alignment="CENTER" prefHeight="56.0" prefWidth="210.0">
+         <children>
+            <Label fx:id="nameLabel" prefHeight="24.0" prefWidth="254.0" text="Nombre comunidad" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="19.0" prefWidth="198.0" spacing="35.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="19.0" prefWidth="271.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="membersLabel" text="Miembros" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox fx:id="enterHbox" alignment="CENTER" onMouseClicked="#enterCommunity" prefHeight="35.0" prefWidth="100.0" spacing="5.0" style="-fx-background-radius: 30; -fx-border-color: FFFFFF; -fx-border-radius: 20; -fx-border-width: 2;" stylesheets="@../css/styles.css">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/enter.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Entrar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="selected" />
+                  <String fx:value="primary-color" />
+               </styleClass>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

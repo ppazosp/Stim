@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="userHbox" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="423.0" spacing="10.0" style="-fx-background-radius: 10;" styleClass="primary-color" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bdii.stimfx.gui.SocialSearchItemController">
+   <children>
+      <ImageView fx:id="iconImage" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox alignment="CENTER" prefHeight="50.0" prefWidth="319.0">
+         <children>
+            <Label fx:id="nameLabel" prefHeight="24.0" prefWidth="254.0" text="XXXXXXXXX" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox fx:id="buttonsHbox" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox fx:id="deleteVbox" alignment="CENTER" prefHeight="50.0" prefWidth="120.0">
+               <children>
+                  <HBox alignment="CENTER" onMouseClicked="#unfollowUser" prefHeight="32.0" prefWidth="91.0" spacing="5.0" style="-fx-background-radius: 30; -fx-border-color: FFFFFF; -fx-border-radius: 20; -fx-border-width: 2;" stylesheets="@../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/remove.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Eliminar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="selected" />
+                        <String fx:value="primary-color" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="addVbox" alignment="CENTER" prefHeight="50.0" prefWidth="98.0">
+               <children>
+                  <HBox alignment="CENTER" onMouseClicked="#followUser" prefHeight="32.0" prefWidth="61.0" spacing="5.0" style="-fx-background-radius: 30; -fx-border-color: FFFFFF; -fx-border-radius: 20; -fx-border-width: 2;" stylesheets="@../css/styles.css">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/addW.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Seguir" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="selected" />
+                        <String fx:value="primary-color" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="12.0" right="10.0" />
+   </padding>
+</HBox>

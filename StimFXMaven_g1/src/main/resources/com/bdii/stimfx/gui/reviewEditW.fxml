@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" styleClass="primary-color" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="50.0" layoutY="47.0" prefHeight="310.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label fx:id="comentLabel" prefHeight="12.0" prefWidth="105.0" text="Comentario" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="comentArea" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="400.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <HBox prefHeight="5.0" prefWidth="500.0" spacing="20.0">
+               <children>
+                  <Label fx:id="valLabel" prefHeight="32.0" prefWidth="96.0" text="Valoracion" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="starsHbox" alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="162.0" spacing="5.0">
+                     <children>
+                        <HBox fx:id="star1" onMouseClicked="#starPressed" prefHeight="24.0" prefWidth="10.0" style="-fx-border-radius: 10; -fx-border-color: #FFFFFF; -fx-border-width: 1; -fx-background-radius: 10;" styleClass="selected" stylesheets="@../css/styles.css">
+                           <children>
+                              <ImageView fx:id="istar1" fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </HBox>
+                        <HBox fx:id="star2" onMouseClicked="#starPressed" prefHeight="24.0" prefWidth="10.0" style="-fx-border-radius: 10; -fx-border-color: #FFFFFF; -fx-border-width: 1; -fx-background-radius: 10;" styleClass="selected" stylesheets="@../css/styles.css">
+                           <children>
+                              <ImageView fx:id="istar2" fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </HBox>
+                        <HBox fx:id="star3" onMouseClicked="#starPressed" prefHeight="24.0" prefWidth="10.0" style="-fx-border-radius: 10; -fx-border-color: #FFFFFF; -fx-border-width: 1; -fx-background-radius: 10;" styleClass="selected" stylesheets="@../css/styles.css">
+                           <children>
+                              <ImageView fx:id="istar3" fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </HBox>
+                        <HBox fx:id="star4" onMouseClicked="#starPressed" prefHeight="24.0" prefWidth="10.0" style="-fx-border-radius: 10; -fx-border-color: #FFFFFF; -fx-border-width: 1; -fx-background-radius: 10;" styleClass="selected" stylesheets="@../css/styles.css">
+                           <children>
+                              <ImageView fx:id="istar4" fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </HBox>
+                        <HBox fx:id="star5" onMouseClicked="#starPressed" prefHeight="24.0" prefWidth="10.0" style="-fx-border-radius: 10; -fx-border-color: #FFFFFF; -fx-border-width: 1; -fx-background-radius: 10;" styleClass="selected" stylesheets="@../css/styles.css">
+                           <children>
+                              <ImageView fx:id="istar5" fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="55.0" prefWidth="425.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="425.0">
+                     <children>
+                        <VBox prefHeight="41.0" prefWidth="109.0">
+                           <children>
+                              <HBox fx:id="actionHbox" alignment="CENTER" onMouseClicked="#publishEdit" prefHeight="30.0" prefWidth="117.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: FFFFFF; -fx-border-width: 2;" stylesheets="@../css/styles.css">
+                                 <children>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../images/addW.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="publishLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="64.0" text="Publicar" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="selected" />
+                                    <String fx:value="primary-color" />
+                                 </styleClass>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
